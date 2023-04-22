@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+}
+
+body {
+  background-color: rgb(186, 73, 73);
+  font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body header #clock {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  color: white;
+}
+body header .nav-wrapper {
+  max-width: 620px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.136);
+}
+body header .nav-wrapper a {
+  color: white;
+}
+body header .nav-wrapper h1 {
+  font-size: 20px;
+  margin: 0;
+}
+body header .nav-wrapper h1 a {
+  display: flex;
+  align-items: center;
+}
+body header .nav-wrapper h1 img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+body header .nav-wrapper ul {
+  display: flex;
+  margin: 0 !important;
+}
+body header .nav-wrapper ul li {
+  padding: 5px 12px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.17);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.6px);
+  margin-right: 8px;
+}
+body header .nav-wrapper ul li a {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+body header .nav-wrapper ul li a img {
+  width: 16px;
+  margin-right: 4px;
+}
+body main .wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 2.6rem;
+  padding: 20px 0px 30px;
+  background: rgba(236, 227, 227, 0.18);
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+}
+body main .wrapper-list {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .wrapper-list ul {
+  display: flex;
+  align-items: center;
+  margin: 0 !important;
+}
+body main .wrapper-list ul li {
+  margin-right: 15px;
+}
+body main .wrapper-list ul li:first-child {
+  background: rgba(0, 0, 0, 0.21);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
+  padding: 3px 16px;
+}
+body main .wrapper-list ul li a {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+body main .wrapper .time-string {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+body main .wrapper .time-string h1 {
+  font-size: 120px;
+  font-weight: bold;
+  color: white;
+}
+body main .wrapper .time {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+body main .wrapper .time .startBtn {
+  cursor: pointer;
+  border: none;
+  margin: 20px 0px 0px;
+  padding: 0px 12px;
+  border-radius: 4px;
+  box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+  font-family: ArialRounded;
+  font-size: 22px;
+  height: 55px;
+  color: rgb(186, 73, 73);
+  font-weight: bold;
+  width: 200px;
+  background-color: white;
+  transition: color 0.5s ease-in-out 0s;
+}
+body main .wrapper .time .pauseBtn {
+  cursor: pointer;
+  border: none;
+  margin: 20px 0px 0px;
+  padding: 0px 12px;
+  border-radius: 4px;
+  font-family: ArialRounded;
+  font-size: 22px;
+  height: 55px;
+  color: rgb(186, 73, 73);
+  font-weight: bold;
+  width: 200px;
+  background-color: white;
+  transition: color 0.5s ease-in-out 0s;
+  display: none;
+}
+body main .wrapper .time .resetBTn {
+  cursor: pointer;
+  border: none;
+  margin: 20px 0px 0px;
+  padding: 0px 17px;
+  border-radius: 4px;
+  font-family: ArialRounded;
+  font-size: 22px;
+  height: 55px;
+  color: rgb(186, 73, 73);
+  font-weight: bold;
+  background-color: white;
+  transition: color 0.5s ease-in-out 0s;
+  position: absolute;
+  right: 2%;
+}
+body #todo {
+  margin-top: 2rem;
+}
+body #todo .wrapper-time {
+  display: flex;
+  justify-content: center;
+}
+body #todo .wrapper-time .time-focus {
+  text-align: center;
+}
+body #todo .wrapper-time .time-focus h4 {
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  font-size: 18px;
+  opacity: 0.6;
+  color: white;
+  margin-bottom: 4px;
+}
+body #todo .wrapper-time .time-focus h3 {
+  font-size: 22px;
+  font-weight: 100;
+  color: white;
+  overflow-wrap: break-word;
+}
+body #todo .todo {
+  max-width: 480px;
+  margin: 20px auto 42px;
+}
+body #todo .todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-bottom: 1px solid white;
+}
+body #todo .todo-header span {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Roboto;
+}
+body #todo .todo-header button {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.9;
+  background: none rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+  margin-left: 10px;
+  font-size: 13px;
+  padding: 8px;
+  min-width: auto;
+  border: none;
+  color: white !important;
+  margin-bottom: 1rem;
+}
+body #todo .todo-header button img {
+  width: 16px;
+}
+body #todo .todoAddBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 64px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.8;
+  margin-top: 1rem;
+  border: 2px dashed rgba(255, 255, 255, 0.4);
+}
+body #todo .todoAddBtn img {
+  width: 18px;
+  margin-right: 8px;
+  opacity: 0.8;
+}
+body #todo .todoAddBtn span {
+  opacity: 0.8;
+  font-weight: bold;
+  color: white;
+}
+body #todo .todoInput {
+  margin-top: 1rem;
+}
+body #todo .todoList {
+  display: none;
+  margin-top: 1rem;
+  padding: 10px 30px;
+  border: 1px solid white;
+  background-color: white;
+  border-left: 6px solid black !important;
+}
+body #todo .todoList .todoItem {
+  color: rgb(90, 87, 87);
+  cursor: pointer;
+  list-style-type: number !important;
+  font-size: 1.3rem;
+}
+body #todo .todoList .done {
+  text-decoration: line-through !important;
+}/*# sourceMappingURL=main.css.map */
