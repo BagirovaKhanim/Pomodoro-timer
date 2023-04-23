@@ -76,6 +76,7 @@ startBtn.addEventListener("click", () => {
     countMinutes = 25;
     countSeconds = 0;
     clearInterval(countdown);
+    countdown = undefined;
     startBtn.style.display = "block";
     pauseBtn.style.display = "none";
   })
@@ -99,9 +100,9 @@ todoAddBtn.addEventListener("click", () => {
       title: 'Oops...',
       text: "Please enter a todo item!"
     })
-  } 
+  }
   else {
-    todoList.style.display ="block"
+    todoList.style.display = "block"
     let todoItem = document.createElement("li");
     todoItem.classList.add("todoItem")
     todoItem.innerHTML = todoInput.value;
